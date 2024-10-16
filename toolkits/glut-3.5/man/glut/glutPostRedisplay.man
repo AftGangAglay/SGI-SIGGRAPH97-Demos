@@ -1,0 +1,30 @@
+.\"
+.\" Copyright (c) Mark J. Kilgard, 1996.
+.\"
+.TH glutPostRedisplay 3GLUT "3.4" "GLUT" "GLUT"
+.SH NAME
+glutPostRedisplay - marks the current window as needing to be
+redisplayed. 
+.SH SYNTAX
+.nf
+.LP
+void glutPostRedisplay(void);
+.fi
+.SH DESCRIPTION
+Mark the normal plane of current window as needing to be redisplayed.
+The next iteration through glutMainLoop, the window's display
+callback will be called to redisplay the window's normal plane. Multiple
+calls to glutPostRedisplay before the next display callback
+opportunity generates only a single redisplay callback.
+glutPostRedisplay may be called within a window's display or
+overlay display callback to re-mark that window for redisplay. 
+
+Logically, normal plane damage notification for a window is treated as a
+glutPostRedisplay on the damaged window. Unlike damage
+reported by the window system, glutPostRedisplay will not set to
+true the normal plane's damaged status (returned by
+glutLayerGet(GLUT_NORMAL_DAMAGED). 
+.SH SEE ALSO
+glutPostOverlayRedisplay, glutDisplayFunc
+.SH AUTHOR
+Mark J. Kilgard (mjk@sgi.com)

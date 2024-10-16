@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML VERSION="2.0">
+<HEAD>
+<!-- WEBMAGIC VERSION NUMBER="2.0.1" -->
+<!-- WEBMAGIC TRANSLATION NAME="ServerRoot" SRC="/var/www/htdocs/" DST="/" -->
+<!-- WEBMAGIC TRANSLATION NAME="ProjectRoot" SRC="./" DST="" -->
+<TITLE>Silicon Graphics Flight Simulator</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF">
+<CENTER><H1 ALIGN="CENTER">Silicon Graphics Flight Simulator</H1>
+</CENTER><H2>NAME</H2>
+<BLOCKQUOTE>flight, dog, shadow - simulate the flight of any of several aircraft </BLOCKQUOTE>
+<H2>SYNOPSIS</H2>
+<BLOCKQUOTE>flight [ -fhns ] [ -i infile ] [ -o outfile ] [ -D datadirectory ] </BLOCKQUOTE>
+<H2>DESCRIPTION</H2>
+<P>Flight is an interactive flight simulator. One large viewport shows the
+world; several smaller ones simulate instruments. The world is shown from
+the cockpit of an aircraft or from a control tower. The mouse and keyboard
+control the aircraft and its environment. </P>
+<P>If the <B>-h</B> option is selected a &quot;heads-up&quot; display is used instead of the instrument
+panel. This kind of display is commonly used in the military. It allows
+for a larger view, which may result in a slower update rate. </P>
+<P><B>Flight -n</B> (dog)is a multi-player version of flight that allows players on two or
+more networked SGIs or PCs to battle each other in a ``dogfight.'' Several
+times a second, each workstation or PC sends status/location packets to
+the other machines using UDP broadcast packets, and receives the other planes'
+packets. All known planes in the current field of view are displayed on
+all systems. Pilots may cooperate by attempting formation aerobatics or
+compete by trying to shoot each other down. The coordinates of projectiles
+are included in the packets, hits are detected, and scoring is maintained. </P>
+<P>If either <B>-i</B> or <B>-o</B> is selected, the status/location packets are read and/or written to files
+as described later under <B>Airshow Option</B>. Otherwise, the broadcast medium is the Ethernet. Newer versions of flight
+on the SGI machines with IRIX releases later than 3.3 use multicast packets.
+To have a dogfight with those systems, start the program with the -b option
+on the SGI machines. (Note: using dog in broadcast packet mode may be harmful
+to other computers on the same network. Unfortunately the current version
+of WINSOCK does not support multicast.) </P>
+<P><B>Flight -s</B> (shadow) allows passive observation of the dog environment. The shadow
+operator sees a full-screen view of the world from a selected aircraft or
+of a selected aircraft from the control tower. </P>
+<P>For maximum framerate on PC's, flight changes the screen resolution to 640x480.
+Specifying the <B>-f</B> option overrides this behavior; if you have a 3D graphics accelerator you
+may wish to take advantage of higher screen resolutions.</P>
+<H3>Starting Up</H3>
+<P>Flight provides two pages of help information. The first help page briefly
+describes the program. The second page offers descriptions of available
+aircraft: one two-place trainer (Cessna 150), one heavy transport (Boeing
+747), and several fighters. </P>
+<P>Type <I>1</I> to select the Cessna 150. The view you see is from the cockpit of the Cessna.
+Type <I>d</I> to see the Cessna from the control tower. Type <I>x</I> a few times for a closer view. Type <I>d</I> to return to the cockpit and strike <I>s</I> three or four times to advance the throttle. The aircraft will start to
+taxi towards the runway. Type <I>F</I> twice to raise the flaps - Cessnas normally take off that way. When the
+plane is almost on the runway, tap the right mouse button five or six times
+to apply right rudder. The plane will start to turn right. The left mouse
+button moves the rudder one increment to the left; the center one sets the
+rudder to zero. Move the mouse till the cursor is centered on the bottom
+edge of the windshield and tap<I> s</I> until the thrust indicator shows full thrust. When the airspeed indicator
+passes 50 knots, move the mouse smoothly toward you. The cursor should be
+in the upper center of the horizon indicator. When the rate-of-climb indicator
+shows positive climb, you are flying! Congratulations! </P>
+<P>Now turn around and land. </P>
+<H3>Flight Controls</H3>
+<P>Flight is controlled by the mouse, the mouse buttons, and the keyboard.
+The mouse holds the primary flight controls. </P>
+<P>Rightmouse and leftmouse move the rudder one increment to the right and
+left, respectively. middlemouse centers it. The rudder position is shown
+by a small red triangle at the lower edge of the artificial horizon. The
+rudder is used primarily to maneuver the aircraft on the ground. Airborne
+turns are made, as in real aircraft, by coordinated application of aileron
+and elevator. </P>
+<P>The mouse position control the ailerons and elevator, emulating a control
+stick. Left-right motion controls roll; forward-back motion controls pitch.
+The stick position is indicated by a square cursor. Both controls are at
+their neutral position when the cursor is centered at the bottom of the
+windshield. Stick position for level flight is slightly below center. </P>
+<P>The<I> s</I> key increases the throttle setting; the<B> </B><I>a</I><B> </B>key decreases it. Thrust goes to zero when the plane climbs through 50,000
+feet and the engine flames out. It can be restored by descending and applying
+throttle. Thrust also goes to zero when fuel goes to zero. Fuel can be restored
+only by making a safe landing. </P>
+<P>Secondary flight controls include the landing gear, flaps, and spoilers.
+To raise or lower the landing gear, type<I> l</I>. To increase or decrease the flaps, type <I>f</I> or <I>F</I>. To increase or decrease the spoilers, type <I>c</I> or <I>C</I>. Flap and spoiler ranges are determined by the aircraft. The Cessna has
+no spoilers and its gear is down and welded. </P>
+<P>The landing gear has two functions: to protect the fuselage from the ground
+and to add drag. You may lower the gear to slow the plane down and make
+handling easier. </P>
+<P>Flaps and gear are structurally unsound at high speeds. They fall off if
+you exceed approximately 400 knots while they are deployed. Missing flaps
+make good landings difficult. Missing gear makes a good landing impossible. </P>
+<P>Flaps increase lift, increase drag, and decrease stall speed. Takeoffs are
+normally made with partial flaps; landings are made with full flaps. </P>
+<P>Spoilers decrease lift and increase drag dramatically. They are most useful
+in dissipating excess altitude without increasing speed. While spoilers
+are deployed, it is difficult to recover from a stall. </P>
+<H3>Display Controls</H3>
+<P>Several controls allow the viewer to alter his view of the world. </P>
+<P>The left-arrow and right-arrow keys rotate the pilot's point of view 5 degrees
+to the left or right respectively. The viewing angle is displayed on the
+windshield. The up-arrow and down-arrow keys can be used to quickly set
+the view to front or rear respectively. The keys are useful for looking
+around, but remember to set the view back to the front for any but the simplest
+flying. </P>
+<P>The <I>d</I> key switches the viewpoint from the cockpit to the control tower or back.
+The control tower always looks toward the plane. The <B>x</B> key decreases the tower's field of view, effectively magnifying the aircraft.
+The <I>z</I> key increases the field of view. If there is doubt as to whether the view
+observed is from the cockpit or the tower, observe the center of the window:
+an orange cross marks the cockpit view. </P>
+<P>The <I>W</I> key switches the viewpoint to that of an imaginary wingman. The <I>x</I> key moves the view toward your aircraft. The <I>z</I> key moves the view away from your aircraft. </P>
+<P>The <I>n</I> and <I>N</I> keys adjust the time of day forward and backward. There is an interesting
+city visible at night NNW of the airport. </P>
+<P>The Q key switches the viewpoint from the cockpit to just above and behind
+your missile or back. The view automatically switches to the cockpit after
+the missile explodes. If you don't have a missile in the air, this key has
+no effect. </P>
+<H3>Instruments</H3>
+<P>The thrust indicator shows thrust and throttle as a percentage of full.
+Reverse thrust is indicated by the REV light and is possible only on the
+ground and is used for braking. </P>
+<P>The airspeed indicator is calibrated from 0 to 700 knots. (100 knots is
+about 118 miles per hour.) Negative airspeeds can happen during such acrobatic
+maneuvers as hammerhead stalls. Since wind is not simulated, airspeed =
+groundspeed. </P>
+<P>The mach meter is used to show speeds greater then 700 knots. </P>
+<P>The climb indicator shows rate of climb in feet per minute. It has a range
+of -6000 to 6000 fpm. </P>
+<P>The G-meter indicates vertical acceleration. Each aircraft has maximum stress
+limits. If they are exceeded, the the G-LIMIT warning light will come on. </P>
+<P>The WING STALL warning light comes on if the maximum angle of attack is
+exceeded The more severe the wing stall, the less control you have over
+your plane. Very severe stalls may throw your plane into a violent spin. </P>
+<P>The artificial horizon helps orient the plane when the real horizon is not
+visible. </P>
+<P>The heading meter displays a combination compass and radar screen. The compass
+rotates and indicates your heading. Your plane's location is always at the
+center of the radar screen. The radar screen shows the positions of the
+runway and planes that are within a few miles of your aircraft. The blue
+line indicates the position of the runway. In dog, other planes are shown
+on the heading meter as red blobs if they are above you or green blobs if
+they are below you. </P>
+<P>The fuel gauge shows remaining fuel in pounds. When fuel is below 10 percent
+the fuel warning light will come on. To reduce fuel consumption to zero
+(for tests only) type <I>~</I>. Note that this forfeits all your missiles and is considered cheating. </P>
+<P>The landing gear indicator show the current state of your landing gear.
+Green indicates that your gear is down and locked. Yellow and black stripes
+indicate that your gear are up and locked. Red is shown when your landing
+gear is retracting or extending. Red is also shown if your gear has been
+ripped off or otherwise damaged. </P>
+<P>The stores indicator shows your current load of sidewinders and rockets. </P>
+<P>The flaps/spoilers meter shows the percentage of flaps and spoilers currently
+deployed. </P>
+<H3>Landings and Crashes </H3>
+<P>A good landing is a landing on the runway, with gear down, a descent rate
+of less than 600 fpm, and wings level. Good landings are rewarded with scores
+from 0 to 100 points. Points are subtracted from a perfect score of 100
+based on touchdown location, descent rate, roll, heading, and drift. For
+every point scored, fuel on board is increased by 1% of total capacity until
+your tank is full. For every ten points scored you re- ceive a missile up
+to the plane's limit. </P>
+<P>Landings with the gear up, descent rate, roll, or drift too high, but not
+disastrous, count as crash landings. You can keep flying, but get no more
+fuel nor ordnance. </P>
+<P>Landings off the runway are ``crashed into the swamps'' landings. Landings
+with excessive descent rate, roll, or drift are ``EXPLODED ON IMPACT'' landings.
+In either case, all you can do is look at the wreckage from the tower or
+restart the game. </P>
+<H3>Restarts </H3>
+<P>Your plane is destroyed if it crashes, taxis too far off the runway, raises
+the gear while on the ground, or is shot down. After your plane is destroyed,<I> r, R, u, </I>or<I> U</I> reincarnates your plane and restarts the game at the second help page.
+You then choose which type of plane you want to fly. These different restart
+options are included to make it easier to restart in intense dog combat.
+Without them, some pilots simply hang around the runway and blast new planes
+as they appear. </P>
+<P>The<I> r</I> key restarts you at the original starting location. The <I>R</I> key restarts you at the south end of the runway. The <I>u</I> key reincarnates your aircraft at a random location in the sky with some
+randomly low airspeed and full throttle. The <I>U</I> key is similar but starts your plane at a fixed location beyond the hills. </P>
+<H3>Weight </H3>
+<P>Flight models aircraft weight accurately. Ordnance and fuel have substantial
+weight. As you fire weapons and burn fuel, your plane becomes lighter and
+more maneuverable. </P>
+<P>Weapons Fighters are armed with rockets, sidewinders, and cannon. The number
+of rockets and sidewinders available on each type of fighter are indicated
+on the help display. Landings replenish missiles as well as fuel. The number
+of missiles replenished depends on the quality of the landing. Ammunition
+for the cannon is inexhaustible. </P>
+<P>Each weapon has a different kill radius. Weapons detonate themselves when
+they are within their kill radius of a plane other than the one they came
+from. All planes within the kill radius of an exploding weapon are destroyed. </P>
+<P>The <I>q</I> key fires a rocket. Rockets have about ten seconds of fuel and follow ballistic
+paths after the fuel is exhausted. They explode when they strike the ground,
+come within range of an aircraft (except the one they came from), or are
+destroyed by their owner. Rockets have the largest kill radius of all the
+weapons. </P>
+<P>The <I>w</I> key fires a sidewinder. Sidewinders are like rockets but track, or steer
+themselves towards, other aircraft if they are ``locked on''. Sidewinders
+are locked on if they are fired while a target aircraft is in the orange
+tracking rectangle or if locked on with the <I>t</I> key. The <I>t</I> key identifies the target and locks a sidewinder onto the target for one
+second without firing the weapon. This is useful for identifying other planes
+as friend or foe. Sidewinders will not lock on aircraft lower than 150 feet,
+but once they are locked on, they will track a plane below 150 feet. Sidewinders
+stop tracking and follow ballistic paths when they run out of fuel. The
+Cessna 150 does not generate enough heat to attract sidewinders. A good
+pilot can usually outmaneuver a sidewinder unless his plane is traveling
+slowly with a heavy load. Sidewinders have a smaller kill radius than rockets. </P>
+<P>The <I>e</I> key fires a cannon round. The cannon has a limited range-each cannon shell
+exists for only one second. Cannons have the smallest kill radius. </P>
+<P>The <I>r</I> key destroys the current missile. Any aircraft in range of the explosion
+is destroyed. Each aircraft can have only one projectile in the air at a
+time. Missiles may take a long time to fall back to the ground after they
+have run out of fuel. It is therefore wise to destroy missiles that are
+out of fuel, allowing new ones to be fired. In flight, or in dog with no
+competition, strafing the airport can be good practice for the real thing. </P>
+<H3>Scoring</H3>
+<P>Dog keeps track of victories and defeats. A pilot scores a ``won'' when
+a projectile fired by his plane destroys another aircraft. A pilot scores
+a ``lost'' when his aircraft is destroyed by a projectile or crashes. </P>
+<P>Each pilot's score is displayed on his instrument panel. The scores of all
+the current players are shown to each new player when he joins the game
+and when he reincarnates himself after destruction. </P>
+<P>When a player joins the game, an announcement is broadcast to all players.
+Messages are also broadcast whenever a player quits, destroys another plane,
+or is destroyed. </P>
+<H3>Airshow Option</H3>
+<P>The <B>-o </B>option will record the path of your aircraft on <I>outfile</I> rather than broadcasting it to the network. </P>
+<P>The <B>-i</B> option replays a recorded flight. You will be in another aircraft, able
+to join the other recorded planes in formation or shoot at, but not really
+destroy them (your missile will explode, but the other plane will continue
+flying). </P>
+<P>Specifying both the <B>-i</B> and <B>-o</B> options replays a recorded flight and produces an outfile containing your
+aircraft's path as well as the other planes' paths. <I>infile</I> and <I>outfile</I> cannot be the same file. Repeated use of the command can make formations
+of many aircraft. </P>
+<H3>Time</H3>
+<P>The time of day is set according to when flight is started up. As the real
+time changes so does the position of the sun. The <I>n</I> key adds five minutes to the time of day. The <I>N</I> key subtracts five minutes from the time of day. </P>
+<P>Sound</P>
+<P>Flight plays sound effects on machines capable of WAVE audio. The S key
+switches between three sound modes. By default, all sound effects are played.
+Pressing S once causes all sound effects except thrust to play. Pressing
+a second time turns off all sound effects. Pressing S a third time turns
+on all the sounds again. </P>
+<P>By setting the environment variable FLIGHTSOUND to a path with sound effect
+files, a user can override the default sounds. The following list gives
+the filename and description of each sound effect. Each file should be a
+WAVE file. The data should be two channel, 16 bit wide, 16 kHz sound samples.
+No warnings are given for missing or corrupt files. </P>
+<DIR>
+<LI><I>cannon.wav</I> - cannon fire 
+<LI><I>die.wav</I> - your plane exploding 
+<LI><I>explosion.wav</I> - any other explosions 
+<LI><I>jthrust.wav</I> - jet engine maximum thrust (currently unsupported) 
+<LI><I>lock.wav</I> -locked on 
+<LI><I>missle.wav</I> - missile being fired 
+</DIR>
+<H3>AUTHORS and CREDITS</H3>
+<UL>
+<LI>Original version by Gary Tarolli. 
+<LI>Current version by Rob Mace. 
+<LI>Contributors Barry Brouillette and Marshal Levine 
+<LI>Network communications Dave &quot;ciemo&quot; Ciemiewicz and Andrew Cherenson. 
+<LI>New instrument panel by Marshal Levine and Rob Mace. 
+<LI>F16 and P38 geometry by Barry Brouillette. 
+<LI>F14 geometry by Rob Mace. 
+<LI>F18 geometry by Thad Beier and Rob Mace 
+<LI>727 geometry by Marc Ondrechen and Rob Mace 
+<LI>Software Systems' Multigen was used to create instrument panel plates and
+to enhance several aircraft models. 
+<LI>Sound effects by Chris Perry and Chris Schoeneman 
+<LI>Ported to OpenGL and Windows 95/NT by Michael Gold 
+</UL>
+<H2>BUGS</H2>
+<UL>
+<LI>Flight and its offspring are continually being improved. Improvements may
+be documented in the program's help display before this document is updated. 
+<LI>The Cessna is too difficult to bring out of a stall. 
+<LI>The F15 looks like a F14 with the wings swept back. 
+<LI>Collision detection is not done with the buildings. This was done on purpose
+because it is fun to fly through them. 
+<LI>The cannon ammunition should be finite and the cannon should overheat and
+jam if used too often. 
+<LI>There is no propeller engine thrust sound. 
+<LI>Many other sounds should be added and existing sounds improved. 
+<LI>The jet engine thrust sound does not work in this version. 
+</UL>
+</BODY>
+</HTML>

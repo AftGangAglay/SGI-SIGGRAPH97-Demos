@@ -1,0 +1,22 @@
+.\"
+.\" Copyright (c) Mark J. Kilgard, 1996.
+.\"
+.TH glutInitDisplayMode 3GLUT "3.4" "GLUT" "GLUT"
+.SH NAME
+glutInitDisplayMode - sets the initial display mode via a string. 
+.SH SYNTAX
+.nf
+.LP
+void glutInitDisplayMode(char *string);
+.fi
+.SH ARGUMENTS
+.IP \fIstring\fP 1i
+Display mode description string, see below.
+.SH DESCRIPTION
+The initial display mode description string is used when creating top-level windows,
+subwindows, and overlays to determine the OpenGL display mode for
+the to-be-created window or overlay. 
+.SH SEE ALSO
+glutInit, glutCreateWindow, glutInitDisplayMode
+.SH AUTHOR
+Mark J. Kilgard (mjk@sgi.com)

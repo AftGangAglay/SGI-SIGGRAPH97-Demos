@@ -1,0 +1,24 @@
+.\"
+.\" Copyright (c) Mark J. Kilgard, 1996.
+.\"
+.TH glutSolidTeapot 3GLUT "3.4" "GLUT" "GLUT"
+.SH NAME
+glutSolidTeapot, glutWireTeapot - render a solid or wireframe teapot respectively. 
+.SH SYNTAX
+.nf
+.LP
+void glutSolidTeapot(GLdouble size);
+void glutWireTeapot(GLdouble size);
+.fi
+.SH ARGUMENTS
+.IP \fIsize\fP 1i
+Relative size of the teapot. 
+.SH DESCRIPTION
+glutSolidTeapot and glutWireTeapot render a solid or wireframe
+teapot respectively. Both surface normals and texture coordinates for the
+teapot are generated. The teapot is generated with OpenGL evaluators. 
+.SH SEE ALSO
+glutSolidSphere, glutSolidCube, glutSolidCone, glutSolidTorus, glutSolidDodecahedron,
+glutSolidOctahedron, glutSolidTetrahedron, glutSolidIcosahedron
+.SH AUTHOR
+Mark J. Kilgard (mjk@sgi.com)

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML VERSION="2.0">
+<HEAD>
+<!-- WEBMAGIC VERSION NUMBER="2.0.1" -->
+<!-- WEBMAGIC TRANSLATION NAME="ServerRoot" SRC="/var/www/htdocs/" DST="/" -->
+<!-- WEBMAGIC TRANSLATION NAME="ProjectRoot" SRC="./" DST="" -->
+<TITLE>SGI Flight Simulator Release Notes</TITLE>
+</HEAD>
+<BODY bgcolor="#FFFFFF" BGCOLOR="#ffffff">
+<P><!-- SGI_COMMENT COSMOCREATE --><!-- SGI_COMMENT VERSION NUMBER="1.0" --></P>
+<CENTER><H1 ALIGN="CENTER">SGI Flight Simulator Release Notes</H1>
+</CENTER><HR>
+<H3>Contents</H3>
+<UL>
+<LI><A HREF="#release">Release Information</A> 
+<LI><A HREF="#changes">Changes</A> 
+<LI><A HREF="#problems">Problems &amp; Solutions</A> 
+<LI><A HREF="#todo">Todo</A> 
+<LI><A HREF="#feedback">Feedback &amp; Bug Reporting</A> 
+</UL>
+<HR>
+<H3><A NAME="release">Release</A> 1.01</H3>
+<P>This release of the <A HREF="http://www.sgi.com">Silicon Graphics</A> Flight Simulator is unsupported. We are giving it away because its fun,
+and it demonstrates the potential for <A HREF="http://www.sgi.com/Technology/OpenGL">OpenGL</A>-based games on the Windows platforms.</P>
+<P>Flight requires Windows 95 or Windows NT 4.0. Earlier versions of Windows
+are not supported.</P>
+<P>Flight uses the beta release of <A HREF="http://www.sgi.com/Products/Cosmo/opengl/cosmogl.html">Cosmo OpenGL</A>, which is included with this distribution. If you run flight on Windows
+NT or on a machine which supports hardware acceleration of OpenGL, the Microsoft
+version of OpenGL is used instead.</P>
+<P>By default, flight temporarily changes the screen resolution to 640x480.
+If you wish to run in the default resolution of your display, specify the
+'-f' option and flight will not resize your display.</P>
+<P>If your display is running in 256 color mode, flight automatically runs
+in color-index mode. The color-index version of flight differs from the
+RGB version in several ways:</P>
+<OL>
+<LI>The airplane models are simpler 
+<LI>The instrument panels are simpler 
+<LI>The foothills are not displayed 
+<LI>The framerate is higher in the absence of hardware acceleration 
+<LI>Fog and texture mapping are not available 
+</OL>
+<P>For best results on machines without hardware acceleration, change your
+display settings to 256 color mode. Flight will run at higher color depths
+but the framerate will be reduced.</P>
+<P>This version of flight is compatible with the version shipped with Silicon
+Graphics workstations, and network play between the two machine types is
+supported. However, the SGI version uses UDP multicast network packets by
+default, while the Windows version uses UDP broadcast packets because the
+current version of Winsock does not support multicast. As a result, the
+PC's will not recognize the SGI machines, but the SGI machines will see
+the PC's. To work around this, you must enable UDP broadcast on the SGI
+machines by running dog with the '-b' option.</P>
+<P>UDP broadcasts have been known to cause problems for some older machines;
+in particular, DEC VAXen grind to a halt when large numbers of UDP broadcast
+packets cross its network interface.</P>
+<HR>
+<H3><A NAME="changes">Changes</A></H3>
+<P>Changes since 1.0:</P>
+<UL>
+<LI>Flight no longer causes some systems to hang after changing the screen resolution. 
+<LI>The artificial horizon and radar now draw correctly under Windows NT. 
+<LI>The instrument panel no longer flashes on the Matrox Millenium under Windows
+NT. 
+<LI>Pressing the left and right mouse buttons together now emulates the middle
+mouse button.
+</UL>
+<HR>
+<H3><A NAME="problems">Problems</A> &amp; Solutions</H3>
+<P><TABLE>
+<TR><TD WIDTH="100" VALIGN="TOP">Problem:</TD><TD>Flight runs slowly in 24-bit under Windows 95.</TD></TR>
+<TR><TD WIDTH="100" VALIGN="TOP">Solution:</TD><TD>Cosmo OpenGL has not yet been optimized for 24-bit displays. Change your
+screen depth to 8, 16, or 32.</TD></TR>
+<TR><TD HEIGHT="10"></TD></TR>
+<TR><TD WIDTH="100" VALIGN="TOP">Problem:</TD><TD>When running under Windows NT on a Matrox Millenium, the lines in the horizon
+and radar meters are jagged.</TD></TR>
+<TR><TD WIDTH="100" VALIGN="TOP">Solution:</TD><TD>This is fixed in the latest driver. Download from: <A HREF="http://www.matrox.com/mgaweb/ftp_mill.htm">http://www.matrox.com/mgaweb/ftp_mill.htm</A></TD> </TR>
+ <TR> <TD HEIGHT="10"></TD> </TR>
+ <TR> <TD WIDTH="100" VALIGN="TOP">Problem:</TD> <TD>When running under Windows 95 on a 3Dlabs Permedia, the entire scene is
+distorted.</TD> </TR>
+ <TR> <TD WIDTH="100" VALIGN="TOP">Solution:</TD> <TD>Modify your Flight shortcut and add the '-f' option.</TD> </TR>
+ <TR> <TD HEIGHT="10"></TD> </TR>
+ <TR> <TD WIDTH="100" VALIGN="TOP">Problem:</TD> <TD>When running under Windows NT on a 3Dlabs Permedia, the control panel flashes.</TD> </TR>
+ <TR> <TD WIDTH="100" VALIGN="TOP">Solution:</TD> <TD>Run in &quot;heads-up display&quot; mode by adding the '-h' option, or type the 'H'
+key after selecting a plane.</TD> </TR>
+  </TABLE> </P>
+<HR>
+<H3><A NAME="todo">Todo</A></H3>
+<UL>
+<LI>Provide and alternate mechanism for the middle mouse button 
+<LI>Debug problems on specific graphics boards 
+<LI>Add support for joysticks 
+</UL>
+<HR>
+<H3><A NAME="feedback">Feedback</A> &amp; Bug Reporting</H3>
+<P>As this is unsupported software, I cannot promise a response. However, you
+may send comments and bug reports to:</P>
+<BLOCKQUOTE><A HREF="mailto:gold@sgi.com">Michael I Gold &lt;gold@sgi.com&gt;</A></BLOCKQUOTE>
+<HR>
+<P><FONT SIZE="1">Last update: April 4, 1997</FONT></P>
+</BODY>
+</HTML>

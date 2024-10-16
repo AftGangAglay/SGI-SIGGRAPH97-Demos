@@ -1,0 +1,166 @@
+<HTML><HEAD><TITLE>OpenGL - More Samples</TITLE></HEAD><BODY><CENTER>
+
+<A HREF="../examples.html"><IMG SRC="../opengl.jpg"></A><BR>
+
+<A HREF="./"><H1>more_samples/</H1></A>
+
+<BR><IMG SRC="../divider.gif"><BR>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="chess.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Classic chessboard with (relatively) complicated pieces (pieces by Randy Brown).  Drag the middle mouse button to spin board.
+  <BR>
+  <BR> Source code: <A HREF="chess/">source directory</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="chess.bat">chess.bat</A>.<BR>
+  <BR> Snapshots: <A HREF="chess.jpg">chess (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="csg.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Constructive Solid Geometry program based on information from the
+  Advanced OpenGL Rendering course at SIGGRAPH '96 by David Blythe and
+  Tom McReynolds.  Click right mouse button for menu.
+  <BR>
+  <BR> Source code: <A HREF="csg.c">csg.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fmore_samples&demo=csg">csg</A>.<BR>
+  <BR> Snapshots: <A HREF="csg.jpg">Sphere sub Cube (shown)</A>, <A HREF="csg1.jpg">Cone sub Cube</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="lorenz.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+ This program shows some particles stuck in a Lorenz attractor (the parameters
+ used are r=28, b=8/3, sigma=10). The eye is attracted to the red particle,
+ with a force directly proportionate to distance. A command line
+ puts the whole mess inside a box made of hexagons. I think this helps to
+ maintain the illusion of 3 dimensions, but it can slow things down.
+ Other options allow you to play with the redraw rate and the number of new
+ lines per redraw. So you can customize it to the speed of your machine.
+  <BR>
+  <BR> Source code: <A HREF="lorenz.c">lorenz.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fmore_samples&demo=lorenz">lorenz</A>.<BR>
+  <BR> Snapshots: <A HREF="lorenz.jpg">start (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="meshview.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Simple program to visualize a mesh with a color ramp scale.
+  Press 'h' for a help menu.  Specify a data file as a command 
+  line argument.
+  <BR>
+  <BR> Source code: <A HREF="meshview/">source directory</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="meshview.bat">meshview.bat</A>.<BR>
+  <BR> Snapshots: <A HREF="meshview.jpg">sinc (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="rainbow.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Demonstration of palette animation in color index mode.
+  Press 'h' for a help menu, middle button spins.
+  <BR>
+  <BR> Source code: <A HREF="rainbow.c">rainbow.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fmore_samples&demo=rainbow">rainbow</A>.<BR>
+  <BR> Snapshots: <A HREF="rainbow.jpg">rainbow (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="sgiflag.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  This program displays a waving flag with an SGI logo trimmed out of
+  it.  The flag is a single nurbs surface (bicubic, bezier). It "waves" 
+  by making it control point oscillate on a sine wave.
+  The logo is cut from the flag using a combination of piecewise-linear 
+  and bezier trim curves.
+  <BR>
+  <BR> Source code: <A HREF="sgiflag.c">sgiflag.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fmore_samples&demo=sgiflag">sgiflag</A>.<BR>
+  <BR> Snapshots: <A HREF="sgiflag.jpg">sgiflag (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="shadow.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Real-time soft shadows.  Press 'h' for a help menu.  Drag the
+  middle mouse button to rotate the scene.
+  <BR>
+  <BR> Source code: <A HREF="shadow/">source directory</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="shadow.bat">shadow.bat</A>.<BR>
+  <BR> Snapshots: <A HREF="shadow.jpg">shadow (shown)</A>, <A HREF="shadow1.jpg">large w/multisample enabled (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="signal.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Demonstration of picking and rendering luminous objects.  Drag the
+  middle mouse button to spin the object.  Move the mouse over the
+  bulbs to light them.
+  <BR>
+  <BR> Source code: <A HREF="signal.c">signal.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fmore_samples&demo=signal">signal</A>.<BR>
+  <BR> Snapshots: <A HREF="signal.jpg">signal (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="simplecap.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Simple demonstration of using OpenGL's stencil test to cap clipped objects.
+  <BR>
+  <BR> Source code: <A HREF="simplecap.c">simplecap.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fmore_samples&demo=simplecap">simplecap</A>.<BR>
+  <BR> Snapshots: <A HREF="simplecap.jpg">capped (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR><IMG SRC="../divider.gif"><BR>
+
+<H5>Copyright &copy; 1997 Silicon Graphics Incorporated.</H5>
+
+</CENTER></BODY></HTML>

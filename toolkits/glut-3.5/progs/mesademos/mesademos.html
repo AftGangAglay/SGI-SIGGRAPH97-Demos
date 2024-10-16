@@ -1,0 +1,175 @@
+<HTML><HEAD><TITLE>OpenGL - Mesademos</TITLE></HEAD><BODY bgcolor="#FFFFFF"><CENTER>
+
+<A HREF="../progs.html"><IMG SRC="../opengl.jpg"></A><BR>
+
+<A HREF="./"><H1>mesademos/</H1></A>
+
+<BR><IMG SRC="../divider.gif"><BR>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="bounce.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  A simple bouncing ball demo (color index mode only).
+  <BR>
+  <BR> Source code: <A HREF="bounce.c">bounce.c</A>.<BR>
+  <BR> Executable: <A HREF="bounce.exe">bounce.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="bounce.jpg">color index (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="gamma.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+   Draw test patterns to help determine correct gamma value for a display.
+   When the intensities in the top row nearly match the intensities in
+   the bottom row you've found the right gamma value.
+  <BR>
+  <BR> Source code: <A HREF="gamma.c">gamma.c</A>.<BR>
+  <BR> Executable: <A HREF="gamma.exe">gamma.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="gamma.jpg">gamma (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="gears.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Simple program with rotating 3-D gear wheels.
+  <BR>
+  <BR> Source code: <A HREF="gears.c">gears.c</A>.<BR>
+  <BR> Executable: <A HREF="gears.exe">gears.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="gears.jpg">gears (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="offset.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+	Uses PolygonOffset to draw hidden-line images.  PolygonOffset
+	    shifts the z values of polygons an amount that is
+	    proportional to their slope in screen z.  This keeps
+	    the lines, which are drawn without displacement, from
+	    interacting with their respective polygons, and
+	    thus eliminates line dropouts.
+
+	The left image shows an ordinary antialiased wireframe image.
+	The center image shows an antialiased hidden-line image without
+	    PolygonOffset.
+	The right image shows an antialiased hidden-line image using
+	    PolygonOffset to reduce artifacts.
+  <BR>
+  <BR> Source code: <A HREF="offset.c">offset.c</A>.<BR>
+  <BR> Executable: <A HREF="offset.exe">offset.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="offset.jpg">offset (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="reflect.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Reflection demo.
+ The basic steps are:
+    1. Render the reflective object (a polygon) from the normal viewpoint,
+       setting the stencil planes = 1.
+    2. Render the scene from a special viewpoint:  the viewpoint which
+       is on the opposite side of the reflective plane.  Only draw where
+       stencil = 1.  This draws the objects in the reflective surface.
+    3. Render the scene from the original viewpoint.  This draws the
+       objects in the normal fashion.  Use blending when drawing
+       the reflective, textured surface.
+  <BR>
+  <BR> Source code: <A HREF="reflect.c">reflect.c</A>.<BR>
+  <BR> Executable: <A HREF="reflect.bat">reflect.bat</A>.<BR>
+  <BR> Snapshots: <A HREF="reflect.jpg">reflect (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="spin.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  A very simple wireframe spinning box.
+  <BR>
+  <BR> Source code: <A HREF="spin.c">spin.c</A>.<BR>
+  <BR> Executable: <A HREF="spin.exe">spin.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="spin.jpg">spin (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="tess_demo.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Dynamic tesselation demonstration program.
+  <BR>
+  <BR> Source code: <A HREF="tess_demo.c">tess_demo.c</A>.<BR>
+  <BR> Executable: <A HREF="tess_demo.exe">tess_demo.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="tess_demo.jpg">tess_demo (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="texobj.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+ Example of using the 1.1 texture object functions.
+ Also, this demo utilizes Mesa's fast texture map path.
+  <BR>
+  <BR> Source code: <A HREF="texobj.c">texobj.c</A>.<BR>
+  <BR> Executable: <A HREF="texobj.exe">texobj.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="texobj.jpg">texobj (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="trdemo.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+ Test/demonstration of tile rendering utility library.
+ This library allows one to render arbitrarily large images with OpenGL.
+ The basic idea is to break the image into tiles which are rendered one
+ at a time.  The tiles are assembled together to form the final, large
+ image.  Tiles can be of any size.
+  <BR>
+  <BR> Source code: <A HREF="trdemo.c">trdemo.c</A>.<BR>
+  <BR> Executable: <A HREF="trdemo.exe">trdemo.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="trdemo.jpg">trdemo (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR><IMG SRC="../divider.gif"><BR>
+
+<H5>Copyright &copy; 1997 Silicon Graphics Incorporated.</H5>
+
+</CENTER></BODY></HTML>

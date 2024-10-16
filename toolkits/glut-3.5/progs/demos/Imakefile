@@ -1,0 +1,11 @@
+
+/* Copyright (c) Mark J. Kilgard, 1994, 1997. */
+
+#define IHaveSubdirs
+#define PassCDebugFlags
+
+SUBDIRS = ideas atlantis walker yacme glutmech geoface \
+  chess rollercoaster underwater opengl_logo
+
+MakeSubdirs($(SUBDIRS))
+DependSubdirs($(SUBDIRS))

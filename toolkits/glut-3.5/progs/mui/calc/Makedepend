@@ -1,0 +1,2 @@
+calc: /usr/include/svr4_math.h ../../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h ../../../include/mui/mui.h /usr/include/GL/gl.h /usr/include/GL/glu.h ./calc.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/string.h /usr/include/math.h #:cfe
+calc: /usr/lib/libc.so /usr/lib/libGLU.so ../../../lib/glut/libglut.a /usr/lib/libXext.so /usr/lib/libXi.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so ../../../lib/mui/libmui.a /usr/lib/libX11.so /usr/lib/libm.so #:ld

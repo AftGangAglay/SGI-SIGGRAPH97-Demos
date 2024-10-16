@@ -1,0 +1,126 @@
+anti: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+accanti: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h ./jitter.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+accanti: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+anti: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+checker: ../../include/GL/glut.h /usr/include/GL/gl.h /usr/include/GL/glu.h #:cfe
+bezmesh: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+checker: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+bezmesh: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+depthcue: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+depthcue: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+dof: /usr/include/svr4_math.h ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h ./jitter.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/math.h #:cfe
+fog: /usr/include/svr4_math.h ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/math.h #:cfe
+dof: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+fog: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+fogindex: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+material: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+fogindex: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+material: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+mipmap: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+nurbs: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+mipmap: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+nurbs: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+pickdepth: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+plane: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+pickdepth: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+plane: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+polys: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+polys: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+sccolorlight: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+scene: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+sccolorlight: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+scenebamb: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+scene: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+scenebamb: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+sceneflat: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+sceneflat: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+stencil: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+stroke: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/string.h #:cfe
+stencil: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+surface: ../../include/GL/glut.h /usr/include/GL/gl.h /usr/include/GL/glu.h #:cfe
+stroke: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+surface: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+teaambient: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+teaambient: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+texturesurf: /usr/include/svr4_math.h ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/math.h #:cfe
+teapots: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+teapots: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+texturesurf: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+aaindex: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+aaindex: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+aapoly: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/string.h #:cfe
+aargb: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+aapoly: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+aargb: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+accpersp: /usr/include/svr4_math.h ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h ./jitter.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/math.h #:cfe
+alpha: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+accpersp: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+alpha: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+bezcurve: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+alpha3D: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+bezcurve: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+alpha3D: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+clip: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+colormat: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+clip: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+cube: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+colormat: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+cube: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+double: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+double: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+drawf: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+drawf: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+feedback: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+feedback: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+hello: ../../include/GL/glut.h /usr/include/GL/gl.h /usr/include/GL/glu.h #:cfe
+font: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/string.h #:cfe
+hello: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+font: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+image: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+light: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+image: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+light: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+lines: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+lines: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+list: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+model: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+list: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+model: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+movelight: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+movelight: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+planet: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+picksquare: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+planet: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+picksquare: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+polyoff: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+polyoff: /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+quadric: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+robot: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+quadric: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+robot: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+select: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+smooth: ../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+select: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+smooth: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+tess: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+tess: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+tesswind: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+texbind: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+texbind: /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+texgen: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+tesswind: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+texprox: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+texgen: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+texprox: /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+texsub: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+texsub: /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+trim: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+torus: /usr/include/svr4_math.h ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/math.h #:cfe
+trim: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+torus: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+unproject: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+varray: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+unproject: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+varray: /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld
+wrap: ../../include/GL/glut.h /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h #:cfe
+wrap: ../../lib/glut/libglut.a /usr/lib/libc.so /usr/lib/libGLU.so /usr/lib/libXext.so /usr/lib/crtn.o /usr/lib/libGL.so /usr/lib/crt1.o /usr/lib/libXmu.so /usr/lib/libX11.so /usr/lib/libm.so #:ld

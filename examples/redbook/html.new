@@ -1,0 +1,846 @@
+<HTML><HEAD><TITLE>OpenGL - Redbook</TITLE></HEAD><BODY><CENTER>
+
+<A HREF="../examples.html"><IMG SRC="../opengl.jpg"></A><BR>
+
+<A HREF="./"><H1>redbook/</H1></A>
+
+<BR><IMG SRC="../divider.gif"><BR>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="aaindex.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  This program draws shows how to draw anti-aliased lines in color
+  index mode. It draws two diagonal lines to form an X; when 'r' 
+  is typed in the window, the lines are rotated in opposite 
+  directions.
+  <BR>
+  <BR> Source code: <A HREF="aaindex.c">aaindex.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=aaindex">aaindex</A>.<BR>
+  <BR> Snapshots: <A HREF="aaindex.jpg">aaindex (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="aargb.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  This program shows how to draw anti-aliased lines. It draws
+  two diagonal lines to form an X; when 'r' is typed in the window, 
+  the lines are rotated in opposite directions.
+  <BR>
+  <BR> Source code: <A HREF="aargb.c">aargb.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=aargb">aargb</A>.<BR>
+  <BR> Snapshots: <A HREF="aargb.jpg">aargb (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="accanti.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+   A simple example of using accumulation buffer to anti-alias.
+  <BR>
+  <BR> Source code: <A HREF="accanti.c">accanti.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=accanti">accanti</A>.<BR>
+  <BR> Snapshots: <A HREF="accanti.jpg">accanti (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="accpersp.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Use the accumulation buffer to do full-scene antialiasing
+  on a scene with perspective projection, using the special
+  routines accFrustum() and accPerspective().
+  <BR>
+  <BR> Source code: <A HREF="accpersp.c">accpersp.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=accpersp">accpersp</A>.<BR>
+  <BR> Snapshots: <A HREF="accpersp.jpg">accpersp (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="alpha.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  This program draws several overlapping filled polygons
+  to demonstrate the effect order has on alpha blending results.
+  Use the 't' key to toggle the order of drawing polygons.
+  <BR>
+  <BR> Source code: <A HREF="alpha.c">alpha.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=alpha">alpha</A>.<BR>
+  <BR> Snapshots: <A HREF="alpha.jpg">alpha (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="alpha3D.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  This program demonstrates how to intermix opaque and
+  alpha blended polygons in the same scene, by using 
+  glDepthMask.  Press the 'a' key to animate moving the 
+  transparent object through the opaque object.  Press 
+  the 'r' key to reset the scene.
+  <BR>
+  <BR> Source code: <A HREF="alpha3D.c">alpha3D.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=alpha3D">alpha3D</A>.<BR>
+  <BR> Snapshots: <A HREF="alpha3D.jpg">alpha3D (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="bezcurve.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  This program uses evaluators to draw a Bezier curve.
+  <BR>
+  <BR> Source code: <A HREF="bezcurve.c">bezcurve.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=bezcurve">bezcurve</A>.<BR>
+  <BR> Snapshots: <A HREF="bezcurve.jpg">bezcurve (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="bezmesh.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program renders a lighted, filled Bezier surface,
+  using two-dimensional evaluators.
+  <BR>
+  <BR> Source code: <A HREF="bezmesh.c">bezmesh.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=bezmesh">bezmesh</A>.<BR>
+  <BR> Snapshots: <A HREF="bezmesh.jpg">bezmesh (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="checker.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program texture maps a checkerboard image onto
+  two rectangles.  This program clamps the texture, if
+  the texture coordinates fall outside 0.0 and 1.0.
+  <BR>
+  <BR> Source code: <A HREF="checker.c">checker.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=checker">checker</A>.<BR>
+  <BR> Snapshots: <A HREF="checker.jpg">checker (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="clip.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates arbitrary clipping planes.
+  <BR>
+  <BR> Source code: <A HREF="clip.c">clip.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=clip">clip</A>.<BR>
+  <BR> Snapshots: <A HREF="clip.jpg">clip (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="colormat.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  After initialization, the program will be in
+  ColorMaterial mode.  Interaction:  pressing the 
+  mouse buttons will change the diffuse reflection values.
+  <BR>
+  <BR> Source code: <A HREF="colormat.c">colormat.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=colormat">colormat</A>.<BR>
+  <BR> Snapshots: <A HREF="colormat.jpg">colormat (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="cube.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates a single modeling transformation,
+  glScalef() and a single viewing transformation, gluLookAt().
+  A wireframe cube is rendered.
+  <BR>
+  <BR> Source code: <A HREF="cube.c">cube.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=cube">cube</A>.<BR>
+  <BR> Snapshots: <A HREF="cube.jpg">cube (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="dof.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates use of the accumulation buffer to
+  create an out-of-focus depth-of-field effect.  The teapots
+  are drawn several times into the accumulation buffer.  The
+  viewing volume is jittered, except at the focal point, where
+  the viewing volume is at the same position, each time.  In
+  this case, the gold teapot remains in focus.
+  <BR>
+  <BR> Source code: <A HREF="dof.c">dof.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=dof">dof</A>.<BR>
+  <BR> Snapshots: <A HREF="dof.jpg">dof (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="double.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This is a simple double buffered program.
+  Pressing the left mouse button rotates the rectangle.
+  Pressing the middle mouse button stops the rotation.
+  <BR>
+  <BR> Source code: <A HREF="double.c">double.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=double">double</A>.<BR>
+  <BR> Snapshots: <A HREF="double.jpg">double (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="drawf.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  Draws the bitmapped letter F on the screen (several times).
+  This demonstrates use of the glBitmap() call.
+  <BR>
+  <BR> Source code: <A HREF="drawf.c">drawf.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=drawf">drawf</A>.<BR>
+  <BR> Snapshots: <A HREF="drawf.jpg">drawf (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="feedback.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+ This program demonstrates use of OpenGL feedback.  First,
+ a lighting environment is set up and a few lines are drawn.
+ Then feedback mode is entered, and the same lines are 
+ drawn.  The results in the feedback buffer are printed.
+  <BR>
+  <BR> Source code: <A HREF="feedback.c">feedback.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=feedback">feedback</A>.<BR>
+  <BR> Snapshots: <A HREF="feedback.jpg">feedback (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="fog.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program draws 5 red teapots, each at a different 
+  z distance from the eye, in different types of fog.  
+  Pressing the left mouse button chooses between 3 types of 
+  fog:  exponential, exponential squared, and linear.  
+  In this program, there is a fixed density value, as well 
+  as fixed start and end values for the linear fog.
+  <BR>
+  <BR> Source code: <A HREF="fog.c">fog.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=fog">fog</A>.<BR>
+  <BR> Snapshots: <A HREF="fog.jpg">fog (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="fogindex.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates fog in color index mode.  
+  Three cones are drawn at different z values in a linear 
+  fog.  32 contiguous colors (from 16 to 47) are loaded 
+  with a color ramp.
+  <BR>
+  <BR> Source code: <A HREF="fogindex.c">fogindex.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=fogindex">fogindex</A>.<BR>
+  <BR> Snapshots: <A HREF="fogindex.jpg">fogindex (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="hello.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+ This is a simple, introductory OpenGL program.
+  <BR>
+  <BR> Source code: <A HREF="hello.c">hello.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=hello">hello</A>.<BR>
+  <BR> Snapshots: <A HREF="hello.jpg">hello (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="image.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates drawing pixels and shows the effect
+  of glDrawPixels(), glCopyPixels(), and glPixelZoom().
+  Interaction: moving the mouse while pressing the mouse button
+  will copy the image in the lower-left corner of the window
+  to the mouse position, using the current pixel zoom factors.
+  There is no attempt to prevent you from drawing over the original
+  image.  If you press the 'r' key, the original image and zoom
+  factors are reset.  If you press the 'z' or 'Z' keys, you change
+  the zoom factors.
+  <BR>
+  <BR> Source code: <A HREF="image.c">image.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=image">image</A>.<BR>
+  <BR> Snapshots: <A HREF="image.jpg">image (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="light.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates the use of the OpenGL lighting
+  model.  A sphere is drawn using a grey material characteristic.
+  A single light source illuminates the object.
+  <BR>
+  <BR> Source code: <A HREF="light.c">light.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=light">light</A>.<BR>
+  <BR> Snapshots: <A HREF="light.jpg">light (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="lines.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates geometric primitives and
+  their attributes.
+  <BR>
+  <BR> Source code: <A HREF="lines.c">lines.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=lines">lines</A>.<BR>
+  <BR> Snapshots: <A HREF="lines.jpg">lines (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="list.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates how to make and execute a 
+  display list.  Note that attributes, such as current 
+  color and matrix, are changed.
+  <BR>
+  <BR> Source code: <A HREF="list.c">list.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=list">list</A>.<BR>
+  <BR> Snapshots: <A HREF="list.jpg">list (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="material.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+ This program demonstrates the use of the GL lighting model.
+ Several objects are drawn using different material characteristics.
+ A single light source illuminates the objects.
+  <BR>
+  <BR> Source code: <A HREF="material.c">material.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=material">material</A>.<BR>
+  <BR> Snapshots: <A HREF="material.jpg">material (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="mipmap.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates using mipmaps for texture maps.
+  To overtly show the effect of mipmaps, each mipmap reduction
+  level has a solidly colored, contrasting texture image.
+  Thus, the quadrilateral which is drawn is drawn with several
+  different colors.
+  <BR>
+  <BR> Source code: <A HREF="mipmap.c">mipmap.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=mipmap">mipmap</A>.<BR>
+  <BR> Snapshots: <A HREF="mipmap.jpg">mipmap (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="pickdepth.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  Picking is demonstrated in this program.  In 
+  rendering mode, three overlapping rectangles are 
+  drawn.  When the left mouse button is pressed, 
+  selection mode is entered with the picking matrix.  
+  Rectangles which are drawn under the cursor position
+  are "picked."  Pay special attention to the depth 
+  value range, which is returned.
+  <BR>
+  <BR> Source code: <A HREF="pickdepth.c">pickdepth.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=pickdepth">pickdepth</A>.<BR>
+  <BR> Snapshots: <A HREF="pickdepth.jpg">pickdepth (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="planet.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program shows how to composite modeling transformations
+  to draw translated and rotated models.
+  Interaction:  pressing the d and y keys (day and year)
+  alters the rotation of the planet around the sun.
+  <BR>
+  <BR> Source code: <A HREF="planet.c">planet.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=planet">planet</A>.<BR>
+  <BR> Snapshots: <A HREF="planet.jpg">planet (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="polyoff.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates polygon offset to draw a shaded
+  polygon and its wireframe counterpart without ugly visual
+  artifacts ("stitching").
+  <BR>
+  <BR> Source code: <A HREF="polyoff.c">polyoff.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=polyoff">polyoff</A>.<BR>
+  <BR> Snapshots: <A HREF="polyoff.jpg">polyoff (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="polys.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates polygon stippling.
+  <BR>
+  <BR> Source code: <A HREF="polys.c">polys.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=polys">polys</A>.<BR>
+  <BR> Snapshots: <A HREF="polys.jpg">polys (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="quadric.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates the use of some of the gluQuadric*
+  routines. Quadric objects are created with some quadric
+  properties and the callback routine to handle errors.
+  Note that the cylinder has no top or bottom and the circle
+  has a hole in it.
+  <BR>
+  <BR> Source code: <A HREF="quadric.c">quadric.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=quadric">quadric</A>.<BR>
+  <BR> Snapshots: <A HREF="quadric.jpg">quadric (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="robot.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+ This program shows how to composite modeling transformations
+ to draw translated and rotated hierarchical models.
+ Interaction:  pressing the s and e keys (shoulder and elbow)
+ alters the rotation of the robot arm.
+  <BR>
+  <BR> Source code: <A HREF="robot.c">robot.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=robot">robot</A>.<BR>
+  <BR> Snapshots: <A HREF="robot.jpg">robot (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="scene.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates the use of the GL lighting model.
+  Objects are drawn using a grey material characteristic. 
+  A single light source illuminates the objects.
+  <BR>
+  <BR> Source code: <A HREF="scene.c">scene.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=scene">scene</A>.<BR>
+  <BR> Snapshots: <A HREF="scene.jpg">scene (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="select.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+ This is an illustration of the selection mode and 
+ name stack, which detects whether objects which collide 
+ with a viewing volume.  First, four triangles and a 
+ rectangular box representing a viewing volume are drawn 
+ (drawScene routine).  The green triangle and yellow 
+ triangles appear to lie within the viewing volume, but 
+ the red triangle appears to lie outside it.  Then the 
+ selection mode is entered (selectObjects routine).  
+ Drawing to the screen ceases.  To see if any collisions 
+ occur, the four triangles are called.  In this example, 
+ the green triangle causes one hit with the name 1, and 
+ the yellow triangles cause one hit with the name 3.
+  <BR>
+  <BR> Source code: <A HREF="select.c">select.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=select">select</A>.<BR>
+  <BR> Snapshots: <A HREF="select.jpg">select (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="smooth.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+ This program demonstrates smooth shading.
+ A smooth shaded polygon is drawn in a 2-D projection.
+  <BR>
+  <BR> Source code: <A HREF="smooth.c">smooth.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=smooth">smooth</A>.<BR>
+  <BR> Snapshots: <A HREF="smooth.jpg">smooth (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="stencil.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  This program draws two rotated tori in a window.  
+  A diamond in the center of the window masks out part 
+  of the scene.  Within this mask, a different model 
+  (a sphere) is drawn in a different color.
+  <BR>
+  <BR> Source code: <A HREF="stencil.c">stencil.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=stencil">stencil</A>.<BR>
+  <BR> Snapshots: <A HREF="stencil.jpg">stencil (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="stroke.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates some characters of a 
+  stroke (vector) font.  The characters are represented
+  by display lists, which are given numbers which 
+  correspond to the ASCII values of the characters.
+  Use of glCallLists() is demonstrated.
+  <BR>
+  <BR> Source code: <A HREF="stroke.c">stroke.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=stroke">stroke</A>.<BR>
+  <BR> Snapshots: <A HREF="stroke.jpg">stroke (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="surface.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program draws a NURBS surface in the shape of a 
+  symmetrical hill.
+  <BR>
+  <BR> Source code: <A HREF="surface.c">surface.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=surface">surface</A>.<BR>
+  <BR> Snapshots: <A HREF="surface.jpg">surface (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="teapots.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates lots of material properties.
+  A single light source illuminates the objects.
+  <BR>
+  <BR> Source code: <A HREF="teapots.c">teapots.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=teapots">teapots</A>.<BR>
+  <BR> Snapshots: <A HREF="teapots.jpg">teapots (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="tess.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates polygon tessellation.
+  Two tesselated objects are drawn.  The first is a
+  rectangle with a triangular hole.  The second is a
+  smooth shaded, self-intersecting star.
+
+  Note the exterior rectangle is drawn with its vertices
+  in counter-clockwise order, but its interior clockwise.
+  Note the combineCallback is needed for the self-intersecting
+  star.  Also note that removing the TessProperty for the 
+  star will make the interior unshaded (WINDING_ODD).
+  <BR>
+  <BR> Source code: <A HREF="tess.c">tess.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=tess">tess</A>.<BR>
+  <BR> Snapshots: <A HREF="tess.jpg">tess (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="tesswind.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates the winding rule polygon 
+  tessellation property.  Four tessellated objects are drawn, 
+  each with very different contours.  When the w key is pressed, 
+  the objects are drawn with a different winding rule.
+  <BR>
+  <BR> Source code: <A HREF="tesswind.c">tesswind.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=tesswind">tesswind</A>.<BR>
+  <BR> Snapshots: <A HREF="tesswind.jpg">tesswind (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="texbind.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates using glBindTexture() by 
+  creating and managing two textures.
+  <BR>
+  <BR> Source code: <A HREF="texbind.c">texbind.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=texbind">texbind</A>.<BR>
+  <BR> Snapshots: <A HREF="texbind.jpg">texbind (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="texsub.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program texture maps a checkerboard image onto
+  two rectangles.  This program clamps the texture, if
+  the texture coordinates fall outside 0.0 and 1.0.
+  If the s key is pressed, a texture subimage is used to
+  alter the original texture.  If the r key is pressed, 
+  the original texture is restored.
+  <BR>
+  <BR> Source code: <A HREF="texsub.c">texsub.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=texsub">texsub</A>.<BR>
+  <BR> Snapshots: <A HREF="texsub.jpg">texsub (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="texturesurf.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program uses evaluators to generate a curved
+  surface and automatically generated texture coordinates.
+  <BR>
+  <BR> Source code: <A HREF="texturesurf.c">texturesurf.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=texturesurf">texturesurf</A>.<BR>
+  <BR> Snapshots: <A HREF="texturesurf.jpg">texturesurf (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="torus.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates the creation of a display list.
+  <BR>
+  <BR> Source code: <A HREF="torus.c">torus.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=torus">torus</A>.<BR>
+  <BR> Snapshots: <A HREF="torus.jpg">torus (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="trim.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program draws a NURBS surface in the shape of a 
+  symmetrical hill, using both a NURBS curve and pwl
+  (piecewise linear) curve to trim part of the surface.
+  <BR>
+  <BR> Source code: <A HREF="trim.c">trim.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=trim">trim</A>.<BR>
+  <BR> Snapshots: <A HREF="trim.jpg">trim (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="varray.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program demonstrates vertex arrays.
+  <BR>
+  <BR> Source code: <A HREF="varray.c">varray.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=varray">varray</A>.<BR>
+  <BR> Snapshots: <A HREF="varray.jpg">varray (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="wrap.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+  This program texture maps a checkerboard image onto
+  two rectangles.  This program demonstrates the wrapping
+  modes, if the texture coordinates fall outside 0.0 and 1.0.
+  Interaction: Pressing the 's' and 'S' keys switch the
+  wrapping between clamping and repeating for the s parameter.
+  The 't' and 'T' keys control the wrapping for the t parameter.
+
+  If running this program on OpenGL 1.0, texture objects are
+  not used.
+  <BR>
+  <BR> Source code: <A HREF="wrap.c">wrap.c</A>.<BR>
+  <BR> Executable: <A target=demo_out HREF="http://localhost/cgi-bin/SIGGRAPH_demo.cgi?demodir=examples%2Fredbook&demo=wrap">wrap</A>.<BR>
+  <BR> Snapshots: <A HREF="wrap.jpg">wrap (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR><IMG SRC="../divider.gif"><BR>
+
+<H5>Copyright &copy; 1997 Silicon Graphics Incorporated</H5>
+
+</CENTER></BODY></HTML>

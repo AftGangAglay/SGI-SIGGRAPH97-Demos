@@ -1,0 +1,565 @@
+<HTML><HEAD><TITLE>OpenGL - Examples</TITLE></HEAD><BODY><CENTER>
+
+<A HREF="../progs.html"><IMG SRC="../opengl.jpg"></A><BR>
+
+<A HREF="./"><H1>examples/</H1></A>
+
+<BR><IMG SRC="../divider.gif"><BR>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="abgr.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+   Demonstrates the use of the extension EXT_abgr.
+   The same image data is used for both ABGR and RGBA formats
+   in glDrawPixels and glTexImage2D.  The left side uses ABGR,
+   the right side RGBA.  The top polygon demonstrates use of texture,
+   and the bottom image is drawn with glDrawPixels.
+   Note that the textures are defined as 3 component, so the alpha
+   value is not used in applying the DECAL environment. 
+  <BR>
+  <BR> Source code: <A HREF="abgr.c">abgr.c</A>.<BR>
+  <BR> Executable: <A HREF="abgr.exe">abgr.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="abgr.jpg">scene (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="bitfont.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Example of using GLUT bitmap fonts.
+  <BR>
+  <BR> Source code: <A HREF="bitfont.c">bitfont.c</A>.<BR>
+  <BR> Executable: <A HREF="bitfont.exe">bitfont.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="bitfont.jpg">text (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="blender.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  Renders two spinning icosahedrons (red and green).
+  The blending factors for the two icosahedrons vary sinusoidally
+  and slightly out of phase.  blender also renders two lines of
+  text in a stroke font: one line antialiased, the other not.
+  <BR>
+  <BR> Source code: <A HREF="blender.c">blender.c</A>.<BR>
+  <BR> Executable: <A HREF="blender.exe">blender.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="blender.jpg">blend (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="cube.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> A simple red cube drawn with minimal OpenGL calls.<BR>
+  <BR> Source code: <A HREF="cube.c">cube.c</A>.<BR>
+  <BR> Executable: <A HREF="cube.exe">cube.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="cube.jpg">cube (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="dinoshade.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Example for PC game developers to show how to combine texturing,
+   reflections, and projected shadows all in real-time with OpenGL.
+   Robust reflections use stenciling.  Robust projected shadows
+   use both stenciling and polygon offset.
+  <BR>
+  <BR> Source code: <A HREF="dinoshade.c">dinoshade.c</A>.<BR>
+  <BR> Executable: <A HREF="dinoshade.exe">dinoshade.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="dinoshade.jpg">scene (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="dinospin.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Arcball like rotation of a chunky dinosaur.<BR>
+  <BR> Source code: <A HREF="dinospin.c">dinospin.c</A>.<BR>
+  <BR> Executable: <A HREF="dinospin.exe">dinospin.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="dinospin.jpg">spinning (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="evaltest.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> OpenGL evaluators simple example with lots of options.<BR>
+  <BR> Source code: <A HREF="evaltest.c">evaltest.c</A>.<BR>
+  <BR> Executable: <A HREF="evaltest.exe">evaltest.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="evaltest.jpg">rotated 3D (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="fogtst.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Demonstration program exhibiting fog techniques.<BR>
+  <BR> Source code: <A HREF="fogtst.c">fogtst.c</A>.<BR>
+  <BR> Executable: <A HREF="fogtst.exe">fogtst.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="fogtst.jpg">dense fog (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="fontdemo.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Bitmap and stroke fonts demonstration program.<BR>
+  <BR> Source code: <A HREF="fontdemo.c">fontdemo.c</A>.<BR>
+  <BR> Executable: <A HREF="fontdemo.exe">fontdemo.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="fontdemo.jpg">fonts (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="glpuzzle.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 3D puzzle that can solve itself automatically.<BR>
+  <BR> Source code: <A HREF="glpuzzle.c">glpuzzle.c</A>.<BR>
+  <BR> Executable: <A HREF="glpuzzle.exe">glpuzzle.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="glpuzzle.jpg">mid-game (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="glutplane.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> OpenGL planes a plenty - add and subtract them.<BR>
+  <BR> Source code: <A HREF="glutplane.c">glutplane.c</A>.<BR>
+  <BR> Executable: <A HREF="glutplane.exe">glutplane.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="glutplane.jpg">flying high (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="halomagic.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Neat haloing effect using the stencil buffer.<BR>
+  <BR> Source code: <A HREF="halomagic.c">halomagic.c</A>.<BR>
+  <BR> Executable: <A HREF="halomagic.exe">halomagic.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="halomagic.jpg">icosahedron (shown)</A>, <A HREF="halomagic1.jpg">dinosaur</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="highlight.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+   This program demonstrates the use of the GL lighting model.
+   Objects are drawn using a grey material characteristic. 
+   A single light source illuminates the objects.
+  <BR>
+  <BR> Source code: <A HREF="highlight.c">highlight.c</A>.<BR>
+  <BR> Executable: <A HREF="highlight.exe">highlight.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="highlight.jpg">red torus (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="lightlab.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Lighting laboratory to experiment with different material properties and lights.<BR>
+  <BR> Source code: <A HREF="lightlab.c">lightlab.c</A>.<BR>
+  <BR> Executable: <A HREF="lightlab.exe">lightlab.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="lightlab.jpg">default (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="mjkwarp.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Texture warping example to show many texturing options of OpenGL.<BR>
+  <BR> Source code: <A HREF="mjkwarp.c">mjkwarp.c</A>.<BR>
+  <BR> Executable: <A HREF="mjkwarp.exe">mjkwarp.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="mjkwarp.jpg">breakup (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="molehill.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Really, really shiny nurbs/evaluators example.<BR>
+  <BR> Source code: <A HREF="molehill.c">molehill.c</A>.<BR>
+  <BR> Executable: <A HREF="molehill.exe">molehill.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="molehill.jpg">scene (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="movelight.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+   This program demonstrates when to issue lighting and 
+   transformation commands to render a model with a light 
+   which is moved by a modeling transformation (rotate or 
+   translate).  The light position is reset after the modeling 
+   transformation is called.  The eye position does not change.
+ 
+   A sphere is drawn using a grey material characteristic. 
+   A single light source illuminates the object.
+ 
+   Interaction:  pressing the left or middle mouse button
+   alters the modeling transformation (x rotation) by 30 degrees.  
+   The scene is then redrawn with the light in a new position.
+  <BR>
+  <BR> Source code: <A HREF="movelight.c">movelight.c</A>.<BR>
+  <BR> Executable: <A HREF="movelight.exe">movelight.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="movelight.jpg">teapot (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="oclip.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+   The main intent of this program is to demo the arbitrary
+   clipping functionality, hence the rendering is kept
+   simple (wireframe) and only one clipping plane is used.
+  <BR>
+  <BR> Source code: <A HREF="oclip.c">oclip.c</A>.<BR>
+  <BR> Executable: <A HREF="oclip.exe">oclip.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="oclip.jpg">clip (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="ohidden.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+   The main intent of this program is to demo the stencil
+   plane functionality, hence the rendering is kept
+   simple (wireframe).
+  <BR>
+  <BR> Source code: <A HREF="ohidden.c">ohidden.c</A>.<BR>
+  <BR> Executable: <A HREF="ohidden.exe">ohidden.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="ohidden.jpg">lines away (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="olight.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR>
+  OpenGL example showing how to do hardware lighting including
+  two-sided lighting.
+  <BR>
+  <BR> Source code: <A HREF="olight.c">olight.c</A>.<BR>
+  <BR> Executable: <A HREF="olight.exe">olight.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="olight.jpg">two-sided (shown)</A>, <A HREF="olight1.jpg">single-sided</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="olympic.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Flyging olympic logo.  Press spacebar to animate.<BR>
+  <BR> Source code: <A HREF="olympic.c">olympic.c</A>.<BR>
+  <BR> Executable: <A HREF="olympic.exe">olympic.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="olympic.jpg">motion (shown)</A>, <A HREF="olympic1.jpg">final image</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="origami.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Origami folding example (paper airplane).<BR>
+  <BR> Source code: <A HREF="origami.c">origami.c</A>.<BR>
+  <BR> Executable: <A HREF="origami.exe">origami.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="origami.jpg">first fold (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="sb2db.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+   This program demonstrates switching between single buffered
+   and double buffered windows when using GLUT.  Use the pop-up menu to
+   change the buffering style used.  On machine that split the screen's
+   color resolution in half when double buffering, you should notice better
+   coloration (less or no dithering) in single buffer mode (but flicker on
+   redraws, particularly when rotation is toggled on).
+  <BR>
+  <BR> Source code: <A HREF="sb2db.c">sb2db.c</A>.<BR>
+  <BR> Executable: <A HREF="sb2db.exe">sb2db.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="sb2db.jpg">scene (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="reflectdino.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+   Very simple example of how to achieve reflections on a flat
+   surface using OpenGL blending.  The example has a mode using
+   OpenGL stenciling to avoid drawing the reflection not on the top of the
+   floor.  Initially, stenciling is not used so if you look (by holding
+   down the left mouse button and moving) at the dinosaur from "below"
+   the floor, you'll see a bogus dinosaur and appreciate how the basic
+   technique works.  Enable stenciling with the popup menu and the
+   bogus dinosaur goes away!  Also, notice that OpenGL lighting works
+   correctly with reflections.
+  <BR>
+  <BR> Source code: <A HREF="reflectdino.c">reflectdino.c</A>.<BR>
+  <BR> Executable: <A HREF="reflectdino.exe">reflectdino.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="reflectdino.jpg">reflectdino (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="scene.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+   This program demonstrates the use of the GL lighting model.
+   Objects are drawn using a grey material characteristic. 
+   A single light source illuminates the objects.
+  <BR>
+  <BR> Source code: <A HREF="scene.c">scene.c</A>.<BR>
+  <BR> Executable: <A HREF="scene.exe">scene.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="scene.jpg">scene (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="screendoor.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> 
+   Demonstrates "screen door" transparency using
+   OpenGL's polygon stipple feature.
+  <BR>
+  <BR> Source code: <A HREF="screendoor.c">screendoor.c</A>.<BR>
+  <BR> Executable: <A HREF="screendoor.exe">screendoor.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="screendoor.jpg">default (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="scube.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Spinning cube with dynamic shadow (runs in color index mode too!).<BR>
+  <BR> Source code: <A HREF="scube.c">scube.c</A>.<BR>
+  <BR> Executable: <A HREF="scube.exe">scube.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="scube.jpg">rgb (shown)</A>, <A HREF="scube1.jpg">color index</A>..<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="simple.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Very simple example of how to draw a single triangle with OpenGL.<BR>
+  <BR> Source code: <A HREF="simple.c">simple.c</A>.<BR>
+  <BR> Executable: <A HREF="simple.exe">simple.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="simple.jpg">scene (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="sphere.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Multiple windows example with GLUT.<BR>
+  <BR> Source code: <A HREF="sphere.c">sphere.c</A>.<BR>
+  <BR> Executable: <A HREF="sphere.exe">sphere.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="sphere.jpg">staged (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="splatlogo.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Fun with bitmaps (and pixel transfer maps) in OpenGL.<BR>
+  <BR> Source code: <A HREF="splatlogo.c">splatlogo.c</A>.<BR>
+  <BR> Executable: <A HREF="splatlogo.exe">splatlogo.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="splatlogo.jpg">messy (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="spots.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Excellent spotlight example showing direction of lights too.<BR>
+  <BR> Source code: <A HREF="spots.c">spots.c</A>.<BR>
+  <BR> Executable: <A HREF="spots.exe">spots.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="spots.jpg">spots (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="stars.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Stars example program with turbo and crazy mode.<BR>
+  <BR> Source code: <A HREF="stars.c">stars.c</A>.<BR>
+  <BR> Executable: <A HREF="stars.exe">stars.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="stars.jpg">warp (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="stenciltst.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> An example of how to use the stencil test.<BR>
+  <BR> Source code: <A HREF="stenciltst.c">stenciltst.c</A>.<BR>
+  <BR> Executable: <A HREF="stenciltst.exe">stenciltst.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="stenciltst.jpg">scene (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="stroke.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Stroke fonts using GLUT (antialiased).<BR>
+  <BR> Source code: <A HREF="stroke.c">stroke.c</A>.<BR>
+  <BR> Executable: <A HREF="stroke.exe">stroke.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="stroke.jpg">spin (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="subwin.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Subwindows with GLUT - each gets its own color.<BR>
+  <BR> Source code: <A HREF="subwin.c">subwin.c</A>.<BR>
+  <BR> Executable: <A HREF="subwin.exe">subwin.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="subwin.jpg">default (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="surfgrid.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> A surface with the grid that it is defined by highlighted.<BR>
+  <BR> Source code: <A HREF="surfgrid.c">surfgrid.c</A>.<BR>
+  <BR> Executable: <A HREF="surfgrid.exe">surfgrid.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="surfgrid.jpg">torus (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR>
+<TABLE BORDER=3 WIDTH=520 CELLPADDING=6>
+<TR>
+ <TD><IMG SRC="triselect.jpg"></TD>
+ <TD VALIGN=TOP>
+  <BR> Triangle selection program.  Click on the triangles to change their color.<BR>
+  <BR> Source code: <A HREF="triselect.c">triselect.c</A>.<BR>
+  <BR> Executable: <A HREF="triselect.exe">triselect.exe</A>.<BR>
+  <BR> Snapshots: <A HREF="triselect.jpg">picke me (shown)</A>.<BR>
+ </TD>
+</TR>
+</TABLE>
+
+<BR><IMG SRC="../divider.gif"><BR>
+
+<H5>Copyright &copy; 1997 Silicon Graphics Incorporated.</H5>
+
+</CENTER></BODY></HTML>

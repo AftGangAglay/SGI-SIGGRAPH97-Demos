@@ -1,0 +1,27 @@
+# Makefile for Win32 (nmake)
+
+
+!include <win32.mak>
+
+
+CFLAGS	= $(cflags) $(cdebug) -DWIN32
+LIBS	= $(lflags) $(ldebug) glut.lib glu.lib opengl.lib $(guilibs)
+SRCS = aaindex.c aapoly.c aargb.c accanti.c accpersp.c alpha.c alpha3D.c bezcurve.c bezmesh.c checker.c clip.c colormat.c cube.c dof.c double.c drawf.c feedback.c fog.c fogindex.c hello.c image.c light.c lines.c list.c planet.c polyoff.c quadric.c robot.c select.c smooth.c tess.c tesswind.c texbind.c texprox.c texsub.c material.c mipmap.c pickdepth.c polys.c scene.c stencil.c stroke.c surface.c teapots.c texturesurf.c torus.c trim.c unproject.c varray.c wrap.c 
+EXES = $(SRCS:.c=.exe)
+
+
+default	: $(EXES)
+
+clean	:
+	@del *.obj ; @del *~
+
+clobber	: clean
+	@del *.exe
+
+$(EXES)	: $*.obj
+        $(link) -out:$@ $** $(LIBS)
+.c.obj	: 
+	$(CC) $(CFLAGS) $<
+
+
+# dependencies (must come AFTER inference rules)
