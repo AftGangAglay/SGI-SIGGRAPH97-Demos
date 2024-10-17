@@ -1,1 +1,0 @@
-glutmech.o: /usr/include/svr4_math.h ../../../include/GL/glut.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/math.h #:cfe

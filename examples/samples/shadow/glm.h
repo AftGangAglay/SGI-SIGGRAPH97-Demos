@@ -6,15 +6,14 @@
  *  www: http://www.pobox.com/~ndr
  */
 
-
-/* includes */
-#include <GL/glut.h>
-
+/*
+ * TODO: Move out `gl.h' alongside `std.h' etc. to separate base library.
+ */
+#include "../../../../../include/aga/gl.h"
 
 #ifndef M_PI
 #define M_PI 3.14159265
 #endif
-
 
 /* defines */
 #define GLM_NONE     (0)		/* render with only vertices */

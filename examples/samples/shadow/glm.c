@@ -508,42 +508,43 @@ _glmFirstPass(GLMmodel* model, FILE* file)
       /* can be one of %d, %d//%d, %d/%d, %d/%d/%d %d//%d */
       if (strstr(buf, "//")) {
 	/* v//n */
-	sscanf(buf, "%d//%d", &v, &n);
-	fscanf(file, "%d//%d", &v, &n);
-	fscanf(file, "%d//%d", &v, &n);
+	sscanf(buf, "%u//%u", &v, &n);
+	fscanf(file, "%u//%u", &v, &n);
+	fscanf(file, "%u//%u", &v, &n);
 	numtriangles++;
 	group->numtriangles++;
-	while(fscanf(file, "%d//%d", &v, &n) > 0) {
+	while(fscanf(file, "%u//%u", &v, &n) > 0) {
 	  numtriangles++;
 	  group->numtriangles++;
 	}
-      } else if (sscanf(buf, "%d/%d/%d", &v, &t, &n) == 3) {
+      } else if (sscanf(buf, "%u/%u/%u", &v, &t, &n) == 3) {
 	/* v/t/n */
-	fscanf(file, "%d/%d/%d", &v, &t, &n);
-	fscanf(file, "%d/%d/%d", &v, &t, &n);
+	fscanf(file, "%u/%u/%u", &v, &t, &n);
+	fscanf(file, "%u/%u/%u", &v, &t, &n);
 	numtriangles++;
 	group->numtriangles++;
-	while(fscanf(file, "%d/%d/%d", &v, &t, &n) > 0) {
+	while(fscanf(file, "%u/%u/%u", &v, &t, &n) > 0) {
 	  numtriangles++;
 	  group->numtriangles++;
 	}
-      } else if (sscanf(buf, "%d/%d", &v, &t) == 2) {
+      } else if (sscanf(buf, "%u/%u", &v, &t) == 2) {
 	/* v/t */
-	fscanf(file, "%d/%d", &v, &t);
-	fscanf(file, "%d/%d", &v, &t);
+	fscanf(file, "%u/%u", &v, &t);
+	fscanf(file, "%u/%u", &v, &t);
 	numtriangles++;
 	group->numtriangles++;
-	while(fscanf(file, "%d/%d", &v, &t) > 0) {
+	while(fscanf(file, "%u/%u", &v, &t) > 0) {
 	  numtriangles++;
 	  group->numtriangles++;
 	}
       } else {
 	/* v */
-	fscanf(file, "%d", &v);
-	fscanf(file, "%d", &v);
+	/* TODO: What? */
+	fscanf(file, "%u", &v);
+	fscanf(file, "%u", &v);
 	numtriangles++;
 	group->numtriangles++;
-	while(fscanf(file, "%d", &v) > 0) {
+	while(fscanf(file, "%u", &v) > 0) {
 	  numtriangles++;
 	  group->numtriangles++;
 	}
@@ -661,18 +662,18 @@ _glmSecondPass(GLMmodel* model, FILE* file)
       /* can be one of %d, %d//%d, %d/%d, %d/%d/%d %d//%d */
       if (strstr(buf, "//")) {
 	/* v//n */
-	sscanf(buf, "%d//%d", &v, &n);
+	sscanf(buf, "%u//%u", &v, &n);
 	T(numtriangles).vindices[0] = v;
 	T(numtriangles).nindices[0] = n;
-	fscanf(file, "%d//%d", &v, &n);
+	fscanf(file, "%u//%u", &v, &n);
 	T(numtriangles).vindices[1] = v;
 	T(numtriangles).nindices[1] = n;
-	fscanf(file, "%d//%d", &v, &n);
+	fscanf(file, "%u//%u", &v, &n);
 	T(numtriangles).vindices[2] = v;
 	T(numtriangles).nindices[2] = n;
 	group->triangles[group->numtriangles++] = numtriangles;
 	numtriangles++;
-	while(fscanf(file, "%d//%d", &v, &n) > 0) {
+	while(fscanf(file, "%u//%u", &v, &n) > 0) {
 	  T(numtriangles).vindices[0] = T(numtriangles-1).vindices[0];
 	  T(numtriangles).nindices[0] = T(numtriangles-1).nindices[0];
 	  T(numtriangles).vindices[1] = T(numtriangles-1).vindices[2];
@@ -682,22 +683,22 @@ _glmSecondPass(GLMmodel* model, FILE* file)
 	  group->triangles[group->numtriangles++] = numtriangles;
 	  numtriangles++;
 	}
-      } else if (sscanf(buf, "%d/%d/%d", &v, &t, &n) == 3) {
+      } else if (sscanf(buf, "%u/%u/%u", &v, &t, &n) == 3) {
 	/* v/t/n */
 	T(numtriangles).vindices[0] = v;
 	T(numtriangles).tindices[0] = t;
 	T(numtriangles).nindices[0] = n;
-	fscanf(file, "%d/%d/%d", &v, &t, &n);
+	fscanf(file, "%u/%u/%u", &v, &t, &n);
 	T(numtriangles).vindices[1] = v;
 	T(numtriangles).tindices[1] = t;
 	T(numtriangles).nindices[1] = n;
-	fscanf(file, "%d/%d/%d", &v, &t, &n);
+	fscanf(file, "%u/%u/%u", &v, &t, &n);
 	T(numtriangles).vindices[2] = v;
 	T(numtriangles).tindices[2] = t;
 	T(numtriangles).nindices[2] = n;
 	group->triangles[group->numtriangles++] = numtriangles;
 	numtriangles++;
-	while(fscanf(file, "%d/%d/%d", &v, &t, &n) > 0) {
+	while(fscanf(file, "%u/%u/%u", &v, &t, &n) > 0) {
 	  T(numtriangles).vindices[0] = T(numtriangles-1).vindices[0];
 	  T(numtriangles).tindices[0] = T(numtriangles-1).tindices[0];
 	  T(numtriangles).nindices[0] = T(numtriangles-1).nindices[0];
@@ -710,19 +711,19 @@ _glmSecondPass(GLMmodel* model, FILE* file)
 	  group->triangles[group->numtriangles++] = numtriangles;
 	  numtriangles++;
 	}
-      } else if (sscanf(buf, "%d/%d", &v, &t) == 2) {
+      } else if (sscanf(buf, "%u/%u", &v, &t) == 2) {
 	/* v/t */
 	T(numtriangles).vindices[0] = v;
 	T(numtriangles).tindices[0] = t;
-	fscanf(file, "%d/%d", &v, &t);
+	fscanf(file, "%u/%u", &v, &t);
 	T(numtriangles).vindices[1] = v;
 	T(numtriangles).tindices[1] = t;
-	fscanf(file, "%d/%d", &v, &t);
+	fscanf(file, "%u/%u", &v, &t);
 	T(numtriangles).vindices[2] = v;
 	T(numtriangles).tindices[2] = t;
 	group->triangles[group->numtriangles++] = numtriangles;
 	numtriangles++;
-	while(fscanf(file, "%d/%d", &v, &t) > 0) {
+	while(fscanf(file, "%u/%u", &v, &t) > 0) {
 	  T(numtriangles).vindices[0] = T(numtriangles-1).vindices[0];
 	  T(numtriangles).tindices[0] = T(numtriangles-1).tindices[0];
 	  T(numtriangles).vindices[1] = T(numtriangles-1).vindices[2];
@@ -734,15 +735,15 @@ _glmSecondPass(GLMmodel* model, FILE* file)
 	}
       } else {
 	/* v */
-	sscanf(buf, "%d", &v);
+	sscanf(buf, "%u", &v);
 	T(numtriangles).vindices[0] = v;
-	fscanf(file, "%d", &v);
+	fscanf(file, "%u", &v);
 	T(numtriangles).vindices[1] = v;
-	fscanf(file, "%d", &v);
+	fscanf(file, "%u", &v);
 	T(numtriangles).vindices[2] = v;
 	group->triangles[group->numtriangles++] = numtriangles;
 	numtriangles++;
-	while(fscanf(file, "%d", &v) > 0) {
+	while(fscanf(file, "%u", &v) > 0) {
 	  T(numtriangles).vindices[0] = T(numtriangles-1).vindices[0];
 	  T(numtriangles).vindices[1] = T(numtriangles-1).vindices[2];
 	  T(numtriangles).vindices[2] = v;
@@ -1499,7 +1500,7 @@ glmWriteOBJ(GLMmodel* model, char* filename, GLuint mode)
   /* spit out the texture coordinates */
   if (mode & GLM_TEXTURE) {
     fprintf(file, "\n");
-    fprintf(file, "# %d texcoords\n", model->texcoords);
+    fprintf(file, "# %p texcoords\n", (void*) model->texcoords);
     for (i = 1; i <= model->numtexcoords; i++) {
       fprintf(file, "vt %f %f\n", 
 	      model->texcoords[2 * i + 0],

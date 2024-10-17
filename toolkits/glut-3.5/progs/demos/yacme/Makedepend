@@ -1,2 +1,0 @@
-invertmat.o: /usr/include/stdio.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/getopt.h #:cfe
-Editor.o: /usr/include/svr4_math.h ../../../include/GL/glut.h /usr/include/stdio.h ./RGBA.h /usr/include/standards.h /usr/include/sgidefs.h /usr/include/GL/gl.h /usr/include/GL/glu.h ./mallocbis.h /usr/include/getopt.h /usr/include/stdlib.h /usr/include/string.h /usr/include/math.h #:cfe

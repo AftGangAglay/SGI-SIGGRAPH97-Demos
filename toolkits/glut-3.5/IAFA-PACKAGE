@@ -1,9 +1,0 @@
-Title:          OpenGL Utility Toolkit (GLUT)
-Version:        3.4
-Description:    A 3-D graphics library which uses the OpenGL API.
-Author:         Mark J. Kilgard mjk@sgi.com
-Maintained-by:  Mark J. Kilgard mjk@sgi.com
-Maintained-at:  ftp.sgi.com/pub/opengl/glut/
-Platforms:      Any Unix system with ANSI C and X and OpenGL or Mesa.
-Copying-Policy: Freely redistributable, not public domain, see NOTICE
-Keywords:       Mesa, OpenGL, GLUT, windowing library
