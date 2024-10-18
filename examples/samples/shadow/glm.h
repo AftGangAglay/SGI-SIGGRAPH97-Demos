@@ -6,12 +6,6 @@
  * www: http://www.pobox.com/~ndr
  */
 
-/*
- * TODO: Move out `gl.h' alongside `std.h' etc. to separate base library.
- */
-#define AGA_WANT_MATH
-#include "../../../../../include/aga/std.h"
-
 /* defines */
 typedef enum _GLMflags {
 	/* render with only vertices */
@@ -24,7 +18,7 @@ typedef enum _GLMflags {
 	GLM_TEXTURE = 1 << 2,
 	/* render with colors */
 	GLM_COLOR = 1 << 3,
-	/* render with materials */
+	/* render with mats */
 	GLM_MATERIAL = 1 << 4
 } GLMflags;
 
@@ -58,8 +52,8 @@ typedef struct _GLMtriangle {
 /* GLMgroup: Structure that defines a group in a model. */
 typedef struct _GLMgroup {
 	char* name; /* name of this group */
-	unsigned ntris; /* number of triangles in this group */
-	unsigned* triangles; /* array of triangle indices */
+	unsigned ntris; /* number of tris in this group */
+	unsigned* tris; /* array of triangle indices */
 	unsigned material; /* index to material for group */
 	struct _GLMgroup* next; /* pointer to next group in model */
 } GLMgroup;
@@ -81,13 +75,13 @@ typedef struct _GLMmodel {
 	unsigned nfnorms; /* number of facetnorms in model */
 	float* fnorms; /* array of facetnorms */
 
-	unsigned ntris; /* number of triangles in model */
-	GLMtriangle* triangles; /* array of triangles */
+	unsigned ntris; /* number of tris in model */
+	GLMtriangle* tris; /* array of tris */
 
-	unsigned nummaterials; /* number of materials in model */
-	GLMmaterial* materials; /* array of materials */
+	unsigned nmats; /* number of mats in model */
+	GLMmaterial* mats; /* array of mats */
 
-	unsigned numgroups; /* number of groups in model */
+	unsigned ngroups; /* number of groups in model */
 	GLMgroup* groups; /* linked list of groups */
 
 	float position[3]; /* position of the model */
@@ -98,12 +92,20 @@ typedef struct _GLMmodel {
 
 /*
  * glmUnitize: "unitize" a model by translating it to the origin and
- * scaling it to fit in a unit cube around the origin.  Returns the
+ * scaling it to fit in a unit cube around the origin. Returns the
  * scalefactor used.
  *
  * model - properly initialized GLMmodel structure 
  */
 float glmUnitize(GLMmodel* model);
+
+/*
+ * glmDimensions: Calculates the extent (min/max xyz) of a model.
+ *
+ * model - initialized GLMmodel structure
+ * dimensions - array of 6 floats - min xyz, max xyz
+ */
+void glmExtent(GLMmodel* model, float* extent);
 
 /*
  * glmDimensions: Calculates the dimensions (width, height, depth) of
@@ -123,7 +125,7 @@ void glmScale(GLMmodel* model, float scale);
 
 /*
  * glmReverseWinding: Reverse the polygon winding for all polygons in
- * this model. Default winding is counter-clockwise.  Also changes
+ * this model. Default winding is counter-clockwise. Also changes
  * the direction of the normals.
  * 
  * model - properly initialized GLMmodel structure 
@@ -141,16 +143,16 @@ void glmFacetNormals(GLMmodel* model);
 
 /*
  * glmVertexNormals: Generates smooth vertex normals for a model.
- * First builds a list of all the triangles each vertex is in.  Then
+ * First builds a list of all the tris each vertex is in. Then
  * loops through each vertex in the list averaging all the facet
- * normals of the triangles each vertex is in.  Finally, sets the
+ * normals of the tris each vertex is in. Finally, sets the
  * normal index in the triangle for the vertex to the generated smooth
- * normal.  If the dot product of a facet normal and the facet normal
- * associated with the first triangle in the list of triangles the
+ * normal. If the dot product of a facet normal and the facet normal
+ * associated with the first triangle in the list of tris the
  * current vertex is in is greater than the cosine of the angle
  * parameter to the function, that facet normal is not added into the
  * average normal calculation and the corresponding vertex is given
- * the facet normal.  This tends to preserve hard edges.  The angle to
+ * the facet normal. This tends to preserve hard edges. The angle to
  * use depends on the model, but 90 degrees is usually a good start.
  *
  * model - initialized GLMmodel structure
@@ -160,7 +162,7 @@ void glmVertexNormals(GLMmodel* model, float angle);
 
 /*
  * glmLinearTexture: Generates texture coordinates according to a
- * linear projection of the texture map.  It generates these by
+ * linear projection of the texture map. It generates these by
  * linearly mapping the vertices onto a square.
  *
  * model - pointer to initialized GLMmodel structure
@@ -169,12 +171,12 @@ void glmLinearTexture(GLMmodel* model);
 
 /*
  * glmSpheremapTexture: Generates texture coordinates according to a
- * spherical projection of the texture map.  Sometimes referred to as
- * spheremap, or reflection map texture coordinates.  It generates
+ * spherical projection of the texture map. Sometimes referred to as
+ * spheremap, or reflection map texture coordinates. It generates
  * these by using the normal to calculate where that vertex would map
- * onto a sphere.  Since it is impossible to map something flat
+ * onto a sphere. Since it is impossible to map something flat
  * perfectly onto something spherical, there is distortion at the
- * poles.  This particular implementation causes the poles along the X
+ * poles. This particular implementation causes the poles along the X
  * axis to be distorted.
  *
  * model - pointer to initialized GLMmodel structure
@@ -189,11 +191,21 @@ void glmSpheremapTexture(GLMmodel* model);
 void glmDelete(GLMmodel* model);
 
 /*
+ * glmReadOBJFile: Reads a model description from a file stream.
+ * Returns a pointer to the created object which should be free'd with
+ * glmDelete().
+ *
+ * filename - name of the file the stream was opened from.
+ * file - the file stream to read from.
+ */
+GLMmodel* glmReadOBJFile(const char* filename, void* file);
+
+/*
  * glmReadOBJ: Reads a model description from a Wavefront .OBJ file.
  * Returns a pointer to the created object which should be free'd with
  * glmDelete().
  *
- * filename - name of the file containing the Wavefront .OBJ format data.  
+ * filename - name of the file containing the Wavefront .OBJ format data.
  */
 GLMmodel* glmReadOBJ(const char* filename);
 
